@@ -45,3 +45,12 @@ restructure folder to app/ component/
 
 knowledge : scss มีความสามารถในการสร้างตัวแปรไว้ใช้ได้
 ไฟล์ index.scss : สร้างตัวแปรสำหรับเก็บสีหลักๆของ web-application
+
+#4 : App Layout (or Page layout)
+-วาง layout ของหน้าหลัก (ในที่นี้เรามี 1 หน้า)
+-ในไฟล์ App.js วาง markup สำหรับทำ layout
+-สร้างไฟล์ App.scss
+-ไฟล์ App.scss : เขียน css สำหรับจัด layout
+-ไฟล์ App.scss : ปรับนามสกุลไฟล์ เป็น App.module.scss
+-หากมี error จากการหา variable ไม่เจอ : ให้ import global css เข้ามาใช้งาน
+-ไฟล์ App.jsx : implement styles ลงไฟล์ App.jsx
