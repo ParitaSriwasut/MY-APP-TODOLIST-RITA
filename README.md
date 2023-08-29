@@ -54,3 +54,13 @@ knowledge : scss มีความสามารถในการสร้า
 -ไฟล์ App.scss : ปรับนามสกุลไฟล์ เป็น App.module.scss
 -หากมี error จากการหา variable ไม่เจอ : ให้ import global css เข้ามาใช้งาน
 -ไฟล์ App.jsx : implement styles ลงไฟล์ App.jsx
+
+#5 : UI-TASK
+5.1 : AppBar or HeaderComponent
+preview
+![header](./images/header.png)
+-ติดตั้ง library สำหรับทำ icon : npm install react-icons link to npm ,link to document
+-สร้างไฟล์ Header.jsx สำหรับทำ Heade
+-สร้างไฟล์ Header.module.scss สำหรับ css
+-import styles มาใช้ใน JSX
+-implement styles กับ className

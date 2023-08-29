@@ -1,3 +1,4 @@
+@import "./index.scss";
 $header-height: 60px;
 $sidebar-width: 300px;
 
@@ -5,23 +6,46 @@ $sidebar-width: 300px;
   display: grid;
   grid-template-rows: $header-height calc(100vh - $header-height);
   grid-template-columns: $sidebar-width calc(100vw - $sidebar-width);
-  // &__=>selector : todo.header
+  // (&__)=>selector : todo.header
   &__header {
     grid-row: 1/2;
     grid-column: 1/-1;
-    background-color: rgb(253, 185, 122);
+    background-color: rgb(255, 255, 255);
   }
 
   &__sidebar {
     grid-row: 2/-1;
     grid-column: 1/2;
-    background-color: rgb(106, 104, 104);
+    background-color: rgb(255, 255, 255);
     // position: sticky;
   }
 
   &__content {
     grid-row: 2/-1;
-    grid-column: 2/1;
-    //background-color: rgb(122, 132, 132);
+    grid-column: 2/-1;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background-color: $primary;
+  height: $header-height;
+  padding: 5px 20px;
+
+  &__logo {
+    font-size: 2.4rem;
+    color: $white;
+    display: flex;
+  }
+  &__text {
+    flex: 1;
+    color: $white;
+  }
+  &__search {
+    min-width: 300px;
   }
 }
