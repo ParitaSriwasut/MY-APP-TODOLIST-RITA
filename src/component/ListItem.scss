@@ -1,0 +1,29 @@
+@import "../index.scss";
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__item {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 400;
+
+    &:hover {
+      background-color: $grey-light;
+    }
+    &__text {
+      font-weight: inherit;
+    }
+  }
+}
+.active {
+  font-weight: 800;
+  background-color: $grey-light;
+}
