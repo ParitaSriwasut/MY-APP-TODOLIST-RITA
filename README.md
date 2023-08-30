@@ -64,3 +64,18 @@ preview
 -สร้างไฟล์ Header.module.scss สำหรับ css
 -import styles มาใช้ใน JSX
 -implement styles กับ className
+
+###npm start (CRA) หรือ npm run dev
+-เรียกใช้ script ของ library (react-script)
+-เอาโค้ดใน src มา Bundle (WebPack)
+-ไล่ตั้ง index.js และดูว่ามีการ import อะไรบ้าง
+-ไล่หา code ที่ import ทั้งหมด
+-code ตัวเองในไฟล์อื่นๆ (incorrect_path, missing file, ลืม export,inport)
+-code ใน node_modules (import ผิดชื่อ, ยังไม่ได้ install package)
+-asset ต่างๆ VDO,PIC,SVG
+-solve import ได้หมด => bundle code เป็น 1 ไฟล์ JSใหญ่
+-นำไฟล์ JS แนบ Index.html ให้
+-นำ CSS ทั้งหมด แนบ index.html ให้ด้วย
+-นำ Asset ต่างๆไปแทรกใน index.html
+-ยัดทุกอย่างที่ต้องใช้ ลง dev-server (webpack dev-server)
+-เปิด server ให้ (default port:3000)
